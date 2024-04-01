@@ -33,6 +33,7 @@ def main():
         plt.title('Gráfico de dispersión de edad vs. BMI con cargos')
         plt.xlabel('Edad')
         plt.ylabel('BMI')
+        plt.savefig('Gráfico de dispersión de edad vs. BMI con cargos.png')
         plt.show()
 
         # Normalización de datos
@@ -52,6 +53,7 @@ def main():
         plt.xlabel('Número de clusters')
         plt.ylabel('Coeficiente de silhouette')
         plt.title('Selección del número óptimo de clusters')
+        plt.savefig('Gráfico de Selección del número óptimo de clusters.png')
         plt.show()
 
         # Entrenamiento del modelo KMeans con el número óptimo de clusters
@@ -67,6 +69,7 @@ def main():
         plt.scatter(centroids[:, 0], centroids[:, 1], marker="D", s=200, c='red')
         plt.xlabel('Edad (Estandarizada)')
         plt.ylabel('BMI (Estandarizado)')
+        plt.savefig('Clusters y centroides obtenidos por KMeans.png')
         plt.title('Clusters y centroides obtenidos por KMeans')
         plt.show()
 
